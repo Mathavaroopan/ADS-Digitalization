@@ -1,4 +1,4 @@
-const data = [
+export const data = [
     {
     project_name: "SnapzAtt",
     Students: ["Aadhithya B. Kailash", "S.A.J. Akarvin Raja Prajan", "J. Harrison Vijay", "S. Keertivaas"],
@@ -805,3 +805,4 @@ const data = [
     progress: [{ direction: 0, resource_utilization: 0, satisfaction: 0, comments: "" }]
     }
 ]
+

@@ -9,7 +9,10 @@ const StudentSchema = new mongoose.Schema({
         type: Array,
         required:true
     },
-    
+    team_leader: {
+        type: String,
+        required: true
+    },
     year: {
         type: Number,
         required: true
@@ -38,6 +41,18 @@ const StudentSchema = new mongoose.Schema({
         type: Array,
         required:true
     },
+    patents: {
+        type: Array,
+        required: true
+    },
+    research_papers: {
+        type: Array,
+        required: true
+    },
+    ppts: {
+        type: Array,
+        required: true
+    }
 })
 
 const student = mongoose.model("Student", StudentSchema);

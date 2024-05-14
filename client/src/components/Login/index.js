@@ -64,7 +64,7 @@ function TeamLeaderLogin({ authenticateUser }) {
     // For demo purposes, let's assume authentication is successful
     if (username === "teamleader" && password === "team123") {
       authenticateUser();
-      navigate("/home");
+      navigate(`/team-leader/${username}`);
     } else {
       alert("Invalid credentials. Please try again.");
     }

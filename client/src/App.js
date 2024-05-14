@@ -23,6 +23,7 @@ import FullDetails from "./components/ProjectDetails/FullDetails.js";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails.js";
 import EmailList from "./components/Login/EmailList.js";
 import TestUpload from "./components/TestUpload.js";
+import TeamLeader from "./components/TeamLeader/TeamLeader.jsx";
 
 const App = () => {
   //New Code
@@ -160,6 +161,7 @@ const App = () => {
             <Route path='/track-progress' element={ <SearchBar/>}/>
             <Route path='/project-details' element={ <ProjectDetails/>}/>
             <Route path='/test' element={ <TestUpload/>}/>
+            <Route path='/team-leader/:username' element={ <TeamLeader/>}/>
           </>
         ) : (
           <Route
