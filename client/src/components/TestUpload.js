@@ -1,7 +1,7 @@
 import React from "react";
-import axios from 'axios'
+import axios from 'axios';
 
-export default function TestUpload() {
+export default function TestUpload({ fileType }) {
   const [file, setFile] = React.useState();
 
   function handleChange(event) {
@@ -19,7 +19,7 @@ export default function TestUpload() {
         "http://localhost:3000/file-upload",
         formData
       );
-      console.log(response.data);
+      console.log(`File uploaded successfully for ${fileType}:`, response.data);
     } catch (error) {
       console.error("Error submitting form:", error);
     }
@@ -27,7 +27,7 @@ export default function TestUpload() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>React File Upload</h1>
+      <h1>Upload {fileType.toUpperCase()}</h1>
       <input type="file" onChange={handleChange} />
       <button type="submit">Upload</button>
     </form>

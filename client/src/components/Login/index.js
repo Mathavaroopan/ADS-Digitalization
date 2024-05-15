@@ -62,10 +62,11 @@ function TeamLeaderLogin({ authenticateUser }) {
     // Add your authentication logic for team leaders here
 
     // For demo purposes, let's assume authentication is successful
-    if (username === "teamleader" && password === "team123") {
+    if (username === "mathavaroopan2210503@ssn.edu.in" && password === "team123") {
       authenticateUser();
       navigate(`/team-leader/${username}`);
     } else {
+      
       alert("Invalid credentials. Please try again.");
     }
   };
